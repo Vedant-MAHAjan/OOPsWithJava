@@ -1,0 +1,43 @@
+//same method name but different arguments or return types
+
+class Exams
+{
+  public void give_Exam()
+  {
+    System.out.println("The exams are OFFLINE.");
+  }
+  
+  public void give_Exam(String help)
+  {
+    System.out.println(help+" Era."+" Exams are ONLINE!!!");
+  }
+}
+Exams semester = new Exams();
+semester.give_Exam();
+semester.give_Exam("Covid");
+
+
+class Addition
+{
+  int add(int a,int b)
+  {
+    return a+b;
+  }
+  int add(int a,int b,int c)
+  {
+    return a+b+c;
+  }
+}
+Addition obj = new Addition();
+System.out.println(obj.add(11,11));
+System.out.println(obj.add(11,11,11));
+
+
+class Adder
+{
+  int add(int a, int b){return a+b;}
+  double add(double a, double b){return a+b;}
+}
+Adder obj = new Adder();
+System.out.println(obj.add(11,11));
+System.out.println(obj.add(12.3,12.6));
