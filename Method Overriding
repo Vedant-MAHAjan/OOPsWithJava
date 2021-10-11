@@ -1,0 +1,42 @@
+//same name, argument and return types but exist in different classes (parent and child class)
+
+class Parent
+{
+  public void drive()
+  {
+    System.out.println("Hello, I'm driving a Swift");
+  }
+}
+class Child extends Parent
+{
+  public void drive()
+  {
+    System.out.println("Hello, I'm driving a Audi");
+  }
+}
+Child car1 = new Child();
+car1.drive();
+Parent car2 = new Parent();
+car2.drive();
+
+
+//another example
+class Parent1 {
+    void show()
+    {
+        System.out.println("Parent's show() method");
+    }
+}
+
+// Inherited class
+class Met_Override extends Parent1 {
+    // This method overrides show() of Parent
+    void show()
+    {
+        System.out.println("Child's show() method");
+    }
+}
+Parent1 obj1 = new Parent1();
+obj1.show();
+Met_Override obj2 = new Met_Override();
+obj2.show();
