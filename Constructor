@@ -1,0 +1,38 @@
+//without constructor 
+
+class Constructor{
+    int id;
+    String name;
+
+    void display(){System.out.println(id+" "+name);}
+
+    public static void main(String args[]){
+      Constructor s1 = new Constructor();
+      s1.name="Karan";
+      s1.id=111;
+      System.out.println(s1.name);
+      System.out.println(s1.id);
+   }
+}
+
+
+//with constructor 
+
+class Constructor{
+    int id;
+    String name;
+
+    Constructor(int i,String n){          //creating a parameterized constructor
+    id = i;
+    name = n;
+    }
+
+    void display(){System.out.println(id+" "+name);}
+
+    public static void main(String args[]){
+    Constructor s1 = new Constructor(111,"Karan");        //creating objects and passing values
+    Constructor s2 = new Constructor(222,"Aryan");          //calling method to display the values of object
+    s1.display();
+    s2.display();
+   }
+}
