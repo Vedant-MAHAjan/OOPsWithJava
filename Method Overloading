@@ -17,6 +17,9 @@ semester.give_Exam();
 semester.give_Exam("Covid");
 
 
+
+//NEW EXAMPLE 
+
 class Addition
 {
   int add(int a,int b)
@@ -32,6 +35,9 @@ Addition obj = new Addition();
 System.out.println(obj.add(11,11));
 System.out.println(obj.add(11,11,11));
 
+
+
+//NEW EXAMPLE 
 
 class Adder
 {
